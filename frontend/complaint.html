@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Complaint Generator | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+        <a href="cases.html">📁 My Cases</a>
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+
+        <a class="active" href="complaint.html">
+            ✍️ Complaints
+        </a>
+
+        <a href="earnings.html">💰 Earnings</a>
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>AI DOCUMENTATION</span>
+
+        <h1>Build your complaint.</h1>
+
+        <p>
+            Nyaya turns your case information into a professional draft.
+        </p>
+
+    </div>
+
+
+    <div class="complaint-layout">
+
+
+        <div class="complaint-controls">
+
+            <label>
+                Platform
+            </label>
+
+            <select id="complaintPlatform">
+                <option value="">Select platform</option>
+                <option>Platform A</option>
+                <option>Platform B</option>
+                <option>Other</option>
+            </select>
+
+
+            <label>
+                Complaint type
+            </label>
+
+            <select id="complaintType">
+
+                <option>Account Deactivation</option>
+                <option>Payment Delay</option>
+                <option>Wrong Penalty</option>
+                <option>Incentive Dispute</option>
+                <option>Unsafe Incident</option>
+                <option>Other</option>
+
+            </select>
+
+
+            <label>
+                Additional information
+            </label>
+
+            <textarea
+                id="complaintAdditional"
+                placeholder="Add anything else you want included..."
+            ></textarea>
+
+
+            <button class="primary-btn" id="generateComplaintBtn">
+                Generate Complaint →
+            </button>
+
+            <p class="js-status is-hidden" id="complaintStatus"></p>
+
+        </div>
+
+
+        <div class="complaint-preview">
+
+            <div class="document-toolbar">
+
+                <span>GENERATED DRAFT</span>
+
+                <div>
+
+                    <button id="complaintCopyBtn" type="button">Copy</button>
+                    <button id="complaintDownloadBtn" type="button">Download</button>
+
+                </div>
+
+            </div>
+
+
+            <article id="complaintPreview">
+
+                <h2 id="complaintSubject">Subject: Appeal Against Account Deactivation</h2>
+
+                <p id="complaintBody">
+                    Dear Support Team,
+                    <br><br>
+                    I am writing to formally request a review of the deactivation of my account.
+                    <br><br>
+                    My account was deactivated on <strong>18 August 2026</strong>. I have not received a clear explanation for this action.
+                    <br><br>
+                    I also have approximately <strong>₹4,800</strong> in pending earnings.
+                    <br><br>
+                    I request that you kindly provide the reason for the deactivation and review the pending earnings associated with my account.
+                    <br><br>
+                    Regards,<br>
+                    Worker
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/complaint.js"></script>
+
+</body>
+</html>

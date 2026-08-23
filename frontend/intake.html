@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>New Issue | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a class="active" href="intake.html">🗣️ New Issue</a>
+
+        <a href="cases.html">📁 My Cases</a>
+
+        <a href="evidence.html">📸 Evidence</a>
+
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+
+        <a href="complaint.html">✍️ Complaints</a>
+
+        <a href="earnings.html">💰 Earnings</a>
+
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>STEP 1 OF 5</span>
+
+        <h1>Tell Nyaya what happened.</h1>
+
+        <p>
+            Don't worry about using legal words.
+            Just explain the problem naturally.
+        </p>
+
+    </div>
+
+
+    <div class="intake-container">
+
+        <div class="language-switch">
+
+            <button class="active">English</button>
+
+            <button>हिन्दी</button>
+
+        </div>
+
+
+        <textarea
+            id="intakeText"
+            placeholder="Example: Mera account bina kisi warning ke deactivate ho gaya aur mere ₹4,800 pending hain..."
+        ></textarea>
+
+
+        <div class="intake-actions">
+
+            <button class="voice-btn" id="voiceBtn">
+                🎙️ Speak instead
+            </button>
+
+            <button class="primary-btn" id="analyzeBtn">
+                Analyze my issue →
+            </button>
+
+        </div>
+
+        <p class="js-status is-hidden" id="intakeStatus"></p>
+
+
+        <div class="confidence-mode">
+
+            <div>
+                <strong>🌱 Confidence Mode</strong>
+
+                <p>
+                    We'll explain everything in very simple language.
+                </p>
+            </div>
+
+            <label class="toggle">
+                <input type="checkbox" checked>
+                <span></span>
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <div class="privacy-note">
+
+        🔐 Your information is collected only to help with this case.
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/intake.js"></script>
+
+</body>
+</html>

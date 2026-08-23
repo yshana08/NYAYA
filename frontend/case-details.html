@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Case Details | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+        <a class="active" href="cases.html">📁 My Cases</a>
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+        <a href="earnings.html">💰 Earnings</a>
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="case-header">
+
+        <div>
+
+            <span id="cdCaseId">CASE NYA-GW-1024</span>
+
+            <h1 id="cdIssueTitle">Account Deactivation</h1>
+
+            <p id="cdCreatedAt">
+                Created 18 August 2026
+            </p>
+
+        </div>
+
+        <span class="case-status" id="cdStatusBadge">
+            ● Awaiting Response
+        </span>
+
+    </div>
+
+
+    <div class="case-summary">
+
+        <span>AI CASE SUMMARY</span>
+
+        <p id="cdSummary">
+            Account deactivated on August 18.
+            Approximately ₹4,800 pending.
+            Two support requests submitted.
+            No response received.
+        </p>
+
+    </div>
+
+
+    <div class="timeline-section">
+
+        <h2>Action Timeline</h2>
+
+        <div class="big-timeline" id="cdTimeline">
+
+            <div class="timeline-complete">
+                <b>DAY 0</b>
+                <strong>Submitted</strong>
+                <span>18 August</span>
+            </div>
+
+            <div class="timeline-complete">
+                <b>DAY 3</b>
+                <strong>Reminder</strong>
+                <span>21 August</span>
+            </div>
+
+            <div class="timeline-active">
+                <b>DAY 7</b>
+                <strong>Escalation</strong>
+                <span>Due 25 August</span>
+            </div>
+
+            <div>
+                <b>DAY 10</b>
+                <strong>External Support</strong>
+                <span>If unresolved</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="case-actions">
+
+        <a href="evidence.html">
+            📸 Evidence
+        </a>
+
+        <a href="complaint.html">
+            ✍️ Complaint
+        </a>
+
+        <a href="#" id="cdExportBtn">
+            📄 Complete Case File
+        </a>
+
+        <a href="support.html">
+            🛟 Human Help
+        </a>
+
+    </div>
+
+
+    <div class="audit-trail">
+
+        <h2>Audit Trail</h2>
+
+        <div id="cdAuditTrail">
+            <span>18 Aug · 10:42 AM</span>
+            Case created
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/case-details.js"></script>
+
+</body>
+</html>

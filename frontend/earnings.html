@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Earnings | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+        <a href="cases.html">📁 My Cases</a>
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+
+        <a class="active" href="earnings.html">
+            💰 Earnings
+        </a>
+
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>EARNINGS SUPPORT</span>
+
+        <h1>Understand what's at risk.</h1>
+
+        <p>
+            Nyaya can help organize your pending earnings dispute.
+        </p>
+
+    </div>
+
+
+    <div class="earnings-calculator">
+
+        <h2>Earnings-at-Risk Calculator</h2>
+
+        <div class="calculator-inputs">
+
+            <label>
+                Average daily earnings
+                <input type="number" value="900" id="earnDailyRate">
+            </label>
+
+            <label>
+                Number of affected days
+                <input type="number" value="5" id="earnDays">
+            </label>
+
+        </div>
+
+        <div class="calculation-result">
+
+            <span>Estimated earnings at risk</span>
+
+            <strong id="earnResultAmount">₹4,500</strong>
+
+            <small id="earnResultFormula">
+                ₹900/day × 5 days
+            </small>
+
+        </div>
+
+        <button class="primary-btn" id="earnAddToCaseBtn">
+            Add to Case
+        </button>
+
+        <p class="js-status is-hidden" id="earnStatus"></p>
+
+    </div>
+
+
+    <div class="guidance-card">
+
+        <span>💰 PENDING EARNINGS GUIDANCE</span>
+
+        <h2>
+            What you should collect
+        </h2>
+
+        <ul class="option-list">
+
+            <li>Earnings statement</li>
+            <li>Payment history</li>
+            <li>Completed order records</li>
+            <li>Platform messages</li>
+
+        </ul>
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/earnings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Questions | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a class="active" href="intake.html">🗣️ New Issue</a>
+        <a href="cases.html">📁 My Cases</a>
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+        <a href="earnings.html">💰 Earnings</a>
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="progress-header">
+
+        <span>CASE ANALYSIS</span>
+
+        <div class="progress">
+            <div></div>
+        </div>
+
+        <small>2 / 5</small>
+
+    </div>
+
+
+    <div class="question-box">
+
+        <div class="detected">
+
+            <span>AI DETECTED</span>
+
+            <strong id="qDetectedLabel">
+                Account Deactivation
+            </strong>
+
+        </div>
+
+
+        <h1>
+            I need a few details.
+        </h1>
+
+        <p id="qFollowUp">
+            I'll only ask questions relevant to your situation.
+        </p>
+
+
+        <label>
+            When did this happen?
+        </label>
+
+        <input type="date" id="qDate">
+
+
+        <label>
+            Did the platform give you a reason or explanation?
+        </label>
+
+        <div class="choice-grid" id="qReasonChoice">
+
+            <button data-value="Yes">Yes</button>
+            <button data-value="No">No</button>
+            <button data-value="Not sure">I'm not sure</button>
+
+        </div>
+
+
+        <label>
+            How much money is currently pending?
+        </label>
+
+        <div class="money-input">
+            <span>₹</span>
+            <input type="number" placeholder="4800" id="qPendingAmount">
+        </div>
+
+        <p class="js-status is-hidden" id="qStatus"></p>
+
+        <div class="question-actions">
+
+            <a href="intake.html">
+                ← Back
+            </a>
+
+            <a href="rights.html" class="primary-btn" id="qContinueBtn">
+                Continue →
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/questions.js"></script>
+
+</body>
+</html>

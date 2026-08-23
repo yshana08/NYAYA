@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rights & Action | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+        <a href="cases.html">📁 My Cases</a>
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+        <a href="earnings.html">💰 Earnings</a>
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>YOUR CASE ANALYSIS</span>
+
+        <h1>Here's what you can do.</h1>
+
+        <p>
+            We've explained your options in simple language.
+        </p>
+
+    </div>
+
+
+    <div class="guidance-grid">
+
+
+        <div class="guidance-card highlight">
+
+            <span>⭐ YOUR NEXT STEP</span>
+
+            <h2 id="rightsNextStep">
+                Request the reason for your deactivation.
+            </h2>
+
+            <p>
+                Following this step moves your case to "Submitted".
+            </p>
+
+            <button class="primary-btn" id="rightsStartActionBtn">
+                Start this action →
+            </button>
+
+            <p class="js-status is-hidden" id="rightsActionStatus"></p>
+
+        </div>
+
+
+        <div class="guidance-card">
+
+            <span>⚖️ YOUR OPTIONS</span>
+
+            <ul class="option-list" id="rightsOptionsList">
+
+                <li>Request written reason</li>
+                <li>Preserve payment records</li>
+                <li>Submit formal appeal</li>
+                <li>Follow up if ignored</li>
+                <li>Escalate if necessary</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="guidance-card">
+
+            <span>📍 ESCALATION PATH</span>
+
+            <div class="escalation-path" id="rightsEscalationPath">
+
+                <div class="path-active">
+                    Platform Support
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    Grievance Channel
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    Worker Organization
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    Legal Aid
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="guidance-card">
+
+            <span>⚠️ VERIFY</span>
+
+            <p>
+                AI-generated legal information should be
+                verified before relying on it.
+            </p>
+
+            <a href="support.html">
+                Need human help? →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <a href="evidence.html" class="primary-btn continue-btn">
+        Build Evidence Checklist →
+    </a>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/rights.js"></script>
+
+</body>
+</html>

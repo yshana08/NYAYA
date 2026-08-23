@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Cases | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+
+        <a class="active" href="cases.html">
+            📁 My Cases
+        </a>
+
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+        <a href="earnings.html">💰 Earnings</a>
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>CASE MANAGEMENT</span>
+
+        <h1>Your cases.</h1>
+
+        <p>
+            Track every complaint and action from one place.
+        </p>
+
+    </div>
+
+
+    <div class="case-list" id="caseListContainer">
+
+
+        <a href="case-details.html" class="case-row">
+
+            <div class="case-id">
+                <span>CASE ID</span>
+                <strong>NYA-GW-1024</strong>
+            </div>
+
+            <div>
+                <span>ISSUE</span>
+                <strong>Account Deactivation</strong>
+            </div>
+
+            <div>
+                <span>STATUS</span>
+                <b class="status-green">Awaiting Response</b>
+            </div>
+
+            <div>
+                <span>READINESS</span>
+                <strong>82%</strong>
+            </div>
+
+            <div>→</div>
+
+        </a>
+
+
+        <a href="case-details.html" class="case-row">
+
+            <div class="case-id">
+                <span>CASE ID</span>
+                <strong>NYA-GW-1018</strong>
+            </div>
+
+            <div>
+                <span>ISSUE</span>
+                <strong>Payment Delay</strong>
+            </div>
+
+            <div>
+                <span>STATUS</span>
+                <b class="status-orange">Escalated</b>
+            </div>
+
+            <div>
+                <span>READINESS</span>
+                <strong>64%</strong>
+            </div>
+
+            <div>→</div>
+
+        </a>
+
+    </div>
+
+
+    <a href="intake.html" class="primary-btn">
+        + Create New Case
+    </a>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cases.js"></script>
+
+</body>
+</html>

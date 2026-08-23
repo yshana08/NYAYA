@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Support | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+        <a href="cases.html">📁 My Cases</a>
+        <a href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+        <a href="earnings.html">💰 Earnings</a>
+
+        <a class="active" href="support.html">
+            🛟 Support
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>WORKER SAFETY NET</span>
+
+        <h1>You're not alone.</h1>
+
+        <p>
+            Find additional support when your case needs human assistance.
+        </p>
+
+    </div>
+
+
+    <div class="support-grid">
+
+        <div class="support-card">
+
+            <div>🤝</div>
+
+            <h3>Worker Organizations</h3>
+
+            <p>
+                Find organizations that may provide
+                worker support and guidance.
+            </p>
+
+            <button id="findOrgsBtn" type="button">
+                Find support →
+            </button>
+
+            <ul class="option-list is-hidden" id="orgsList">
+                <li>Indian Federation of App-based Transport Workers (IFAT)</li>
+                <li>Gig Workers Association</li>
+                <li>Local transport workers' union</li>
+            </ul>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <div>⚖️</div>
+
+            <h3>Legal Aid</h3>
+
+            <p>
+                Explore available legal-aid options
+                for complex cases.
+            </p>
+
+            <button id="findLegalAidBtn" type="button">
+                Explore →
+            </button>
+
+            <ul class="option-list is-hidden" id="legalAidList">
+                <li>District Legal Services Authority (DLSA)</li>
+                <li>National Legal Services Authority (NALSA) helpline</li>
+                <li>State labour commissioner's office</li>
+            </ul>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <div>👤</div>
+
+            <h3>Human Handoff</h3>
+
+            <p>
+                Send your complete case package
+                to a human supporter.
+            </p>
+
+            <button class="primary-btn" id="handoffBtn" type="button">
+                Prepare Case Package →
+            </button>
+
+            <p class="js-status is-hidden" id="handoffStatus"></p>
+
+        </div>
+
+    </div>
+
+
+    <div class="legal-warning">
+
+        ⚠️ Nyaya provides legal information and workflow
+        assistance. It does not provide courtroom representation.
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/support.js"></script>
+
+</body>
+</html>

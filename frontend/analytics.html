@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nyaya Analytics</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="admin-page">
+
+<header class="admin-header">
+
+    <div class="logo">
+
+        <div class="logo-icon">N</div>
+
+        <div>
+            <h2>Nyaya</h2>
+            <span>Admin / NGO Dashboard</span>
+        </div>
+
+    </div>
+
+    <a href="dashboard.html">
+        Worker View →
+    </a>
+
+</header>
+
+
+<main class="analytics">
+
+    <div class="page-header">
+
+        <span>IMPACT DASHBOARD</span>
+
+        <h1>Nyaya at a glance.</h1>
+
+    </div>
+
+
+    <div class="analytics-grid">
+
+        <div>
+            <span>Total Cases</span>
+            <strong id="anTotal">126</strong>
+        </div>
+
+        <div>
+            <span>Resolved</span>
+            <strong id="anResolved">72</strong>
+        </div>
+
+        <div>
+            <span>Pending</span>
+            <strong id="anPending">31</strong>
+        </div>
+
+        <div>
+            <span>Escalated</span>
+            <strong id="anEscalated">23</strong>
+        </div>
+
+    </div>
+
+
+    <div class="money-impact">
+
+        <span>TOTAL MONEY RECOVERED</span>
+
+        <strong id="anRecovered">₹2,48,500</strong>
+
+        <p>
+            Across resolved payment-related cases
+        </p>
+
+    </div>
+
+
+    <div class="issue-chart">
+
+        <h2>Cases by issue type</h2>
+
+        <div id="anIssueChart">
+
+        <div class="bar">
+            <span>Account Deactivation</span>
+            <div style="width:78%"></div>
+        </div>
+
+        <div class="bar">
+            <span>Payment Delay</span>
+            <div style="width:65%"></div>
+        </div>
+
+        <div class="bar">
+            <span>Wrong Penalty</span>
+            <div style="width:45%"></div>
+        </div>
+
+        <div class="bar">
+            <span>Incentive Dispute</span>
+            <div style="width:38%"></div>
+        </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/analytics.js"></script>
+
+</body>
+</html>

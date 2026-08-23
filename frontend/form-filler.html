@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Smart Form Filler | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+
+    </div>
+
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a href="intake.html">🗣️ New Issue</a>
+
+        <a href="cases.html">📁 My Cases</a>
+
+        <a href="evidence.html">📸 Evidence</a>
+
+        <a class="active" href="form-filler.html">
+            📄 Smart Form Filler
+        </a>
+
+        <a href="complaint.html">✍️ Complaints</a>
+
+        <a href="earnings.html">💰 Earnings</a>
+
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>⭐ AI SMART FORM FILLER</span>
+
+        <h1>
+            Upload once. Let Nyaya do the paperwork.
+        </h1>
+
+        <p>
+            Upload a document and Nyaya extracts information,
+            performs calculations and maps it to the required form.
+        </p>
+
+    </div>
+
+
+    <div class="smart-flow">
+
+
+        <div class="flow-card">
+
+            <div class="flow-number">1</div>
+
+            <div class="upload-large">
+
+                <span>📄</span>
+
+                <h3>
+                    Upload document
+                </h3>
+
+                <p>
+                    PDF, JPG or PNG — or paste its text below
+                </p>
+
+                <input type="file" id="formFileInput">
+
+            </div>
+
+            <!-- No real OCR in this demo (see backend/README.md) — paste what the
+                 document says and Nyaya extracts name / roll number / marks from it. -->
+            <div class="scan-box">
+                <textarea id="formScanText" placeholder="e.g. Name: Rahul Kumar, Roll Number: 102458, Marks: 421/500"></textarea>
+                <button class="primary-btn" id="formExtractBtn" type="button">Extract →</button>
+                <p class="js-status is-hidden" id="formStatus"></p>
+            </div>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-card">
+
+            <div class="flow-number">2</div>
+
+            <h3>AI extracts information</h3>
+
+            <div class="extracted-data" id="formExtractedData">
+
+                <div>
+                    <span>Name</span>
+                    <strong id="fmName">Rahul Kumar</strong>
+                </div>
+
+                <div>
+                    <span>Roll Number</span>
+                    <strong id="fmRoll">102458</strong>
+                </div>
+
+                <div>
+                    <span>Total Marks</span>
+                    <strong id="fmMarks">421 / 500</strong>
+                </div>
+
+                <div>
+                    <span>Percentage</span>
+                    <strong id="fmPercent">84.2%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="flow-arrow">
+            →
+        </div>
+
+
+        <div class="flow-card">
+
+            <div class="flow-number">3</div>
+
+            <h3>Form automatically filled</h3>
+
+            <div class="fake-form">
+
+                <label>
+                    Name
+                    <input value="Rahul Kumar" readonly id="ffName">
+                </label>
+
+                <label>
+                    Roll Number
+                    <input value="102458" readonly id="ffRoll">
+                </label>
+
+                <label>
+                    Percentage
+                    <input value="84.2%" readonly id="ffPercent">
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="verification-warning">
+
+        <div>⚠️</div>
+
+        <div>
+
+            <strong>
+                Please verify extracted information
+            </strong>
+
+            <p id="formVerifyNote">
+                Nyaya calculated 84.2% from the marks detected
+                in your document. Please verify before submission.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="submission-control">
+
+        <div>
+
+            <strong>Worker-controlled submission</strong>
+
+            <p>
+                Nyaya never submits automatically.
+                You review and confirm first.
+            </p>
+
+        </div>
+
+        <button class="primary-btn" id="formConfirmBtn">
+            Review & Confirm →
+        </button>
+
+    </div>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/form-filler.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "nyaya-backend",
+  "version": "1.0.0",
+  "description": "API + static server for the Nyaya gig-worker dispute assistant — serves the real index.html/style.css/script.js and backs the intake demo with real case storage, evidence scanning and Claude-powered classification.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

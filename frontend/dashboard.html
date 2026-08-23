@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+
+    <nav class="side-nav">
+
+        <a class="active" href="dashboard.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="intake.html">
+            🗣️ New Issue
+        </a>
+
+        <a href="cases.html">
+            📁 My Cases
+        </a>
+
+        <a href="evidence.html">
+            📸 Evidence
+        </a>
+
+        <a href="form-filler.html">
+            📄 Smart Form Filler
+        </a>
+
+        <a href="complaint.html">
+            ✍️ Complaints
+        </a>
+
+        <a href="earnings.html">
+            💰 Earnings
+        </a>
+
+        <a href="support.html">
+            🛟 Support
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <a href="privacy.html">🔐 Privacy</a>
+
+        <a href="index.html">← Logout</a>
+
+    </div>
+
+</aside>
+
+
+<main class="dashboard">
+
+    <header class="dashboard-header">
+
+        <div>
+            <span>GOOD MORNING</span>
+            <h1>Hello, Worker 👋</h1>
+        </div>
+
+        <div class="header-actions">
+
+            <button id="langToggle">हिन्दी / EN</button>
+
+            <button class="notification">
+                🔔
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <section class="quick-start">
+
+        <div>
+
+            <span>NEED HELP?</span>
+
+            <h2>What happened?</h2>
+
+            <p>
+                Tell Nyaya about your problem in your own words.
+            </p>
+
+            <a href="intake.html" class="primary-btn">
+                Start a new case →
+            </a>
+
+        </div>
+
+        <div class="quick-ai">
+            🧠
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+
+        <div class="dashboard-card">
+
+            <div class="card-heading">
+                <span>ACTIVE CASES</span>
+                <a href="cases.html">View all →</a>
+            </div>
+
+            <h2 id="activeCasesCount">2</h2>
+
+            <div id="activeCasesList">
+
+            <div class="case-mini">
+
+                <span class="case-status green-dot">
+                    ●
+                </span>
+
+                <div>
+                    <strong>Account Deactivation</strong>
+                    <small>NYA-GW-1024</small>
+                </div>
+
+                <span>82%</span>
+
+            </div>
+
+            <div class="case-mini">
+
+                <span class="case-status orange-dot">
+                    ●
+                </span>
+
+                <div>
+                    <strong>Payment Delay</strong>
+                    <small>NYA-GW-1018</small>
+                </div>
+
+                <span>64%</span>
+
+            </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-card earnings-card">
+
+            <span>PENDING EARNINGS</span>
+
+            <h2 id="pendingEarningsAmount">₹4,800</h2>
+
+            <p>
+                Estimated earnings currently at risk.
+            </p>
+
+            <a href="earnings.html">
+                View earnings guidance →
+            </a>
+
+        </div>
+
+
+        <div class="dashboard-card readiness-card">
+
+            <span>CASE READINESS</span>
+
+            <div class="readiness-circle" id="dashboardReadinessCircle">
+                82%
+            </div>
+
+            <p id="dashboardReadinessNote">
+                Your strongest next step is to submit
+                the pending earnings evidence.
+            </p>
+
+            <a href="evidence.html" id="dashboardImproveLink">
+                Improve case →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="next-action" id="nextActionSection">
+
+        <div class="action-icon">→</div>
+
+        <div>
+
+            <span>YOUR NEXT ACTION</span>
+
+            <h3 id="nextActionTitle">
+                Request the reason for account deactivation.
+            </h3>
+
+            <p id="nextActionMeta">
+                Due today · Case NYA-GW-1024
+            </p>
+
+        </div>
+
+        <button id="nextActionBtn">
+            Take Action
+        </button>
+
+    </section>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

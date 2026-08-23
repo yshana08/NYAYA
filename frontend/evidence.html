@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Evidence | Nyaya</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+        <div class="logo-icon">N</div>
+
+        <div>
+            <strong>Nyaya</strong>
+            <small>For Gig Workers</small>
+        </div>
+    </div>
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="intake.html">🗣️ New Issue</a>
+        <a href="cases.html">📁 My Cases</a>
+        <a class="active" href="evidence.html">📸 Evidence</a>
+        <a href="form-filler.html">📄 Smart Form Filler</a>
+        <a href="complaint.html">✍️ Complaints</a>
+        <a href="earnings.html">💰 Earnings</a>
+        <a href="support.html">🛟 Support</a>
+
+    </nav>
+
+</aside>
+
+
+<main class="page">
+
+    <div class="page-header">
+
+        <span>EVIDENCE INTELLIGENCE</span>
+
+        <h1>Build a stronger case.</h1>
+
+        <p>
+            Nyaya identifies what evidence may help support your case.
+        </p>
+
+    </div>
+
+
+    <div class="readiness-card">
+
+        <div>
+
+            <span>EVIDENCE READINESS</span>
+
+            <h2 id="evidenceReadinessPct">80%</h2>
+
+            <p id="evidenceReadinessNote">
+                You're almost ready to submit your appeal.
+            </p>
+
+        </div>
+
+        <div class="circle" id="evidenceReadinessCircle">
+            80%
+        </div>
+
+    </div>
+
+
+    <div class="evidence-grid" id="evidenceCategories">
+
+        <div class="evidence-category">
+            <div class="category-header">💰 <strong>Payment Evidence</strong></div>
+            <div class="evidence-item done">✓ Earnings statement</div>
+            <div class="evidence-item done">✓ Payment history</div>
+            <div class="evidence-item missing">+ Pending payout proof</div>
+        </div>
+
+        <div class="evidence-category">
+            <div class="category-header">🔒 <strong>Account Evidence</strong></div>
+            <div class="evidence-item done">✓ Deactivation screenshot</div>
+            <div class="evidence-item missing">+ Deactivation message</div>
+        </div>
+
+        <div class="evidence-category">
+            <div class="category-header">💬 <strong>Communication</strong></div>
+            <div class="evidence-item done">✓ Support conversation</div>
+            <div class="evidence-item">+ Previous complaints</div>
+        </div>
+
+    </div>
+
+
+    <div class="upload-box">
+
+        <div class="upload-icon">📤</div>
+
+        <h3>Upload evidence</h3>
+
+        <p>
+            Screenshots, PDFs, statements or notices
+        </p>
+
+        <input type="file" multiple id="evidenceFileInput">
+
+        <!-- No real OCR in this demo (see backend/README.md) — pasted text stands in for
+             what a real scan would extract, and drives the checklist above. -->
+        <div class="scan-box">
+            <label for="evidenceScanText">Or paste what a document/screenshot says</label>
+            <textarea id="evidenceScanText" placeholder="e.g. Payment ₹4,800 pending, status: delayed, 18 August"></textarea>
+            <button class="primary-btn" id="evidenceScanBtn" type="button">Scan text →</button>
+            <p class="js-status is-hidden" id="evidenceScanStatus"></p>
+            <div id="evidenceScanChips"></div>
+        </div>
+
+    </div>
+
+
+    <a href="form-filler.html" class="primary-btn continue-btn">
+        Continue to Smart Form Filler →
+    </a>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/evidence.js"></script>
+
+</body>
+</html>
