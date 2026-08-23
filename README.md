@@ -1,4 +1,3 @@
-NYAYA
 # ⚖️ Nyaya — AI-Powered Rights Assistant for Gig Workers
 
 **Nyaya** is an AI-powered platform designed to help gig workers understand and resolve workplace disputes such as **payment delays, unfair penalties, account deactivation, incentive issues, and unsafe incidents**.
@@ -18,6 +17,13 @@ Instead of navigating complicated support systems alone, workers can explain the
 * 🤝 **Human Support Handoff** — Enables escalation to human/NGO/legal-aid support.
 * 📊 **Impact Analytics** — Provides insights into cases and outcomes.
 
+## 🛠️ Tech Stack
+
+**Frontend:** HTML, CSS, JavaScript
+**Backend:** Node.js, Express.js
+**AI:** Anthropic Claude
+**Browser APIs:** Web Speech API
+**Storage:** LocalStorage + backend case store
 
 ## 🔄 How It Works
 
