@@ -19,11 +19,11 @@ Instead of navigating complicated support systems alone, workers can explain the
 
 ## 🛠️ Tech Stack
 
-**Frontend:** HTML, CSS, JavaScript
-**Backend:** Node.js, Express.js
-**AI:** Anthropic Claude
-**Browser APIs:** Web Speech API
-**Storage:** LocalStorage + backend case store
+**Frontend:** HTML, CSS, JavaScript 
+**Backend:** Node.js, Express.js 
+**AI:** Anthropic Claude 
+**Browser APIs:** Web Speech API 
+**Storage:** LocalStorage + backend case store 
 
 ## 🔄 How It Works
 
