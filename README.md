@@ -18,13 +18,6 @@ Instead of navigating complicated support systems alone, workers can explain the
 * 🤝 **Human Support Handoff** — Enables escalation to human/NGO/legal-aid support.
 * 📊 **Impact Analytics** — Provides insights into cases and outcomes.
 
-## 🛠️ Tech Stack
-
-**Frontend:** HTML, CSS, JavaScript
-**Backend:** Node.js, Express.js
-**AI:** Anthropic Claude
-**Browser APIs:** Web Speech API
-**Storage:** LocalStorage + backend case store
 
 ## 🔄 How It Works
 
